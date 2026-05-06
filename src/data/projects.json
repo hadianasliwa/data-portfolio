@@ -1,0 +1,50 @@
+[
+  {
+    "id": "customer-churn",
+    "title": "Customer Churn Prediction",
+    "description": "Predicting high-risk customers likely to churn using ensemble learning techniques.",
+    "tools": ["Python", "Scikit-Learn", "Pandas", "Matplotlib"],
+    "problem": "A telecommunications company is losing customers to competitors. They need to identify churn patterns to improve retention.",
+    "dataset": "Telco Customer Churn dataset from Kaggle containing 7,000+ customer records.",
+    "approach": "Cleaned data, performed EDA to find key churn drivers, implemented Random Forest and XGBoost models, optimized with GridSearch.",
+    "results": "Achieved an F1-score of 0.85, identifying that contract duration and monthly charges were the primary predictors.",
+    "githubUrl": "https://github.com/hadianasliwa/churn-prediction",
+    "category": "ML"
+  },
+  {
+    "id": "ecomm-dashboard",
+    "title": "E-commerce Sales Insights",
+    "description": "Dynamic Power BI dashboard visualizing sales trends, customer demographics, and regional performance.",
+    "tools": ["Power BI", "SQL", "Excel", "DAX"],
+    "problem": "Business managers lacked real-time visibility into sales performance across different regions and product categories.",
+    "dataset": "Internal sales database with over 50,000 transactions and customer metadata.",
+    "approach": "Used SQL to extract and transform data, established star schema in Power BI, created complex DAX measures for YTD and MoM growth.",
+    "results": "Reduced reporting time by 60% and identified a 15% drop in sales in the Northern region due to shipping delays.",
+    "githubUrl": "https://github.com/hadianasliwa/ecomm-dashboard",
+    "category": "BI"
+  },
+  {
+    "id": "sql-optimization",
+    "title": "Database Performance Tuning",
+    "description": "Optimizing complex SQL queries for a high-traffic production database.",
+    "tools": ["SQL", "PostgreSQL", "Query Profiler"],
+    "problem": "Batch processing jobs were taking over 4 hours to complete, causing downstream data latency issues.",
+    "dataset": "Proprietary database logs and execution plans from a 1TB PostgreSQL environment.",
+    "approach": "Analyzed slow query logs, identified missing indexes, refactored nested subqueries into CTEs, and optimized join orders.",
+    "results": "Reduced job execution time from 4.5 hours to 35 minutes, a 90% increase in performance.",
+    "githubUrl": "https://github.com/hadianasliwa/sql-optimization",
+    "category": "SQL"
+  },
+  {
+    "id": "market-basket",
+    "title": "Market Basket Analysis",
+    "description": "Discovering product association rules using the Apriori algorithm to drive cross-selling.",
+    "tools": ["Python", "Mlxtend", "Pandas"],
+    "problem": "A grocery retailer wanted to optimize shelf placement and create effective 'buy-one-get-one' offers.",
+    "dataset": "Retail transactional data containing 10,000+ unique receipts.",
+    "approach": "Preprocessed transaction data into one-hot encoded format, applied Apriori algorithm, and analyzed support, confidence, and lift.",
+    "results": "Discovered strong associations between certain organic snacks and premium dairy products, leading to a 5% increase in cross-sales.",
+    "githubUrl": "https://github.com/hadianasliwa/market-basket",
+    "category": "Python"
+  }
+]
