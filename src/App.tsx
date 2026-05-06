@@ -111,10 +111,10 @@ export default function App() {
                   </h2>
                   <div className="space-y-6 text-zinc-600 dark:text-slate-400 leading-relaxed text-xl">
                     <p>
-                      I am a Data Scientist with a deep focus on extracting predictive patterns from complex, high-velocity datasets. My methodology combines statistical rigor with a relentless pursuit of business impact.
+                      Software engineer with 7 years of experience in the field of software. Proficient in programming languages such as Python and JS.
                     </p>
                     <p>
-                      With expertise spanning Python engineering, advanced SQL optimization, and neural network architectures, I specialize in building end-to-end data products. I don't just provide charts; I deliver decision-ready frameworks.
+                      Skilled in Data Science and Data Analysis. Adept at problem-solving and critical thinking, passionate about developing creative solutions to complex technical challenges.
                     </p>
                   </div>
                   
@@ -154,7 +154,7 @@ export default function App() {
                           </div>
                           <div>
                              <p className="text-xs text-zinc-400 dark:text-slate-500 font-bold uppercase">Impact</p>
-                             <p className="text-lg font-black text-zinc-900 dark:text-white tracking-tight">40+ PROJECTS</p>
+                             <p className="text-lg font-black text-zinc-900 dark:text-white tracking-tight">10+ PROJECTS</p>
                           </div>
                        </div>
                     </div>
