@@ -118,7 +118,7 @@ export default function App() {
                     </p>
                   </div>
                   
-                  <div className="mt-12 flex flex-wrap gap-6">
+                  {/* <div className="mt-12 flex flex-wrap gap-6">
                     <div className="flex flex-col">
                        <span className="text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-slate-500 mb-2">LinkedIn</span>
                        <span className="text-sm font-bold text-zinc-900 dark:text-white">/in/hadiana-sliwa</span>
@@ -126,7 +126,7 @@ export default function App() {
                     <div className="flex flex-col">
                        <span className="text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-slate-500 mb-2">GitHub</span>
                        <span className="text-sm font-bold text-zinc-900 dark:text-white">@hadianasliwa</span>
-                    </div>
+                    </div> */}
                   </div>
                 </motion.div>
                 
@@ -154,7 +154,7 @@ export default function App() {
                           </div>
                           <div>
                              <p className="text-xs text-zinc-400 dark:text-slate-500 font-bold uppercase">Impact</p>
-                             <p className="text-lg font-black text-zinc-900 dark:text-white tracking-tight">40+ PROJECTS</p>
+                             <p className="text-lg font-black text-zinc-900 dark:text-white tracking-tight">10+ PROJECTS</p>
                           </div>
                        </div>
                     </div>
@@ -266,8 +266,8 @@ export default function App() {
              
              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {[
-                  { title: "Google, Advanced Data Analytics", date: "August 2023", tag: "Engineering" },
-                  { title: "IBM, Data Analyst", date: "December 2022", tag: "AI/ML" }
+                  { title: "Google, Advanced Data Analytics", date: "August 2023", tag: "Analytics" },
+                  { title: "IBM, Data Analyst", date: "December 2022", tag: "Statistics/Analytics" }
                 ].map((post, i) => (
                   <motion.div 
                     key={i}
