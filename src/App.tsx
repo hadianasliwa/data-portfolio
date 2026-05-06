@@ -158,9 +158,9 @@ export default function App() {
                           </div>
                        </div>
                     </div>
-                    <button className="w-full mt-10 py-4 border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 font-black uppercase tracking-widest rounded-xl hover:bg-indigo-600 hover:text-white transition-all">
+                    {/* <button className="w-full mt-10 py-4 border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 font-black uppercase tracking-widest rounded-xl hover:bg-indigo-600 hover:text-white transition-all">
                        Download CV
-                    </button>
+                    </button> */}
                   </div>
                 </motion.div>
               </div>
