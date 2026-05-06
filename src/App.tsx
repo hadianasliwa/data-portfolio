@@ -259,15 +259,15 @@ export default function App() {
              <div className="flex justify-between items-end mb-12">
                 <div>
                    <h2 className="text-3xl font-bold text-zinc-900 dark:text-white mb-2">Latest Insights</h2>
-                   <p className="text-zinc-600 dark:text-zinc-400">Thoughts on data engineering and machine learning.</p>
+                   <p className="text-zinc-600 dark:text-zinc-400">View my latest Certificates.</p>
                 </div>
                 <button className="hidden sm:block text-sm font-semibold text-blue-600 hover:underline">View All Posts</button>
              </div>
              
              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {[
-                  { title: "Optimizing PostgreSQL for Billions of Rows", date: "June 2024", tag: "Engineering" },
-                  { title: "Generative AI in Predictive Analytics", date: "August 2024", tag: "AI/ML" }
+                  { title: "Google, Advanced Data Analytics", date: "August 2023", tag: "Engineering" },
+                  { title: "IBM, Data Analyst", date: "December 2022", tag: "AI/ML" }
                 ].map((post, i) => (
                   <motion.div 
                     key={i}
