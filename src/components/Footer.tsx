@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="flex gap-4 text-[9px] font-bold uppercase tracking-widest text-zinc-300 dark:text-slate-800">
                <span>V1.0.4</span>
                <span>|</span>
-               <span>London, UK</span>
+               <span>Erbil, Iraq</span>
             </div>
           </div>
           

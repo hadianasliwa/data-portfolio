@@ -1,12 +1,15 @@
 [
   { "name": "Python", "category": "Programming", "proficiency": 90 },
+  { "name": "Appscript", "category": "Programming", "proficiency": 70 },
+  { "name": "bash script", "category": "Programming", "proficiency": 70 },
   { "name": "SQL", "category": "Data", "proficiency": 95 },
   { "name": "Power BI", "category": "Visualization", "proficiency": 85 },
   { "name": "Tableau", "category": "Visualization", "proficiency": 75 },
   { "name": "Excel", "category": "Data", "proficiency": 90 },
   { "name": "Scikit-Learn", "category": "Tools", "proficiency": 80 },
   { "name": "Pandas", "category": "Tools", "proficiency": 95 },
-  { "name": "R", "category": "Programming", "proficiency": 65 },
+  { "name": "MS Azure", "category": "Tools", "proficiency": 75 },
+  { "name": "Google Suite", "category": "Tools", "proficiency": 85 },
   { "name": "TensorFlow", "category": "Tools", "proficiency": 60 },
   { "name": "Cloud Data Warehouses", "category": "Data", "proficiency": 75 }
 ]
