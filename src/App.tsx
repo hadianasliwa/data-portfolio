@@ -118,15 +118,15 @@ export default function App() {
                     </p>
                   </div>
                   
-                  {/* <div className="mt-12 flex flex-wrap gap-6">
+                  <div className="mt-12 flex flex-wrap gap-6">
                     <div className="flex flex-col">
                        <span className="text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-slate-500 mb-2">LinkedIn</span>
-                       <span className="text-sm font-bold text-zinc-900 dark:text-white">/in/hadiana-sliwa</span>
+                       <a href="https://www.linkedin.com/in/hadiana-sliwa/" target="_blank" rel="noreferrer" className="text-sm font-bold text-zinc-900 dark:text-white hover:text-indigo-600 transition-colors">/in/hadiana-sliwa</a>
                     </div>
                     <div className="flex flex-col">
                        <span className="text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-slate-500 mb-2">GitHub</span>
-                       <span className="text-sm font-bold text-zinc-900 dark:text-white">@hadianasliwa</span>
-                    </div> */}
+                       <a href="https://github.com/hadianasliwa" target="_blank" rel="noreferrer" className="text-sm font-bold text-zinc-900 dark:text-white hover:text-indigo-600 transition-colors">@hadianasliwa</a>
+                    </div>
                   </div>
                 </motion.div>
                 
@@ -154,13 +154,10 @@ export default function App() {
                           </div>
                           <div>
                              <p className="text-xs text-zinc-400 dark:text-slate-500 font-bold uppercase">Impact</p>
-                             <p className="text-lg font-black text-zinc-900 dark:text-white tracking-tight">10+ PROJECTS</p>
+                             <p className="text-lg font-black text-zinc-900 dark:text-white tracking-tight">40+ PROJECTS</p>
                           </div>
                        </div>
                     </div>
-                    {/* <button className="w-full mt-10 py-4 border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 font-black uppercase tracking-widest rounded-xl hover:bg-indigo-600 hover:text-white transition-all">
-                       Download CV
-                    </button> */}
                   </div>
                 </motion.div>
               </div>
@@ -255,49 +252,52 @@ export default function App() {
           </section>
 
           {/* Blog/Insights Section (Bonus) */}
-          <section className="py-24 px-4 max-w-7xl mx-auto">
+          <section className="py-24 px-6 sm:px-12 max-w-7xl mx-auto">
              <div className="flex justify-between items-end mb-12">
                 <div>
-                   <h2 className="text-3xl font-bold text-zinc-900 dark:text-white mb-2">Latest Insights</h2>
+                   <h2 className="text-3xl font-black text-zinc-900 dark:text-white mb-2 uppercase tracking-tighter italic">Latest Insights</h2>
                    <p className="text-zinc-600 dark:text-zinc-400">View my latest Certificates.</p>
                 </div>
-                <button className="hidden sm:block text-sm font-semibold text-blue-600 hover:underline">View All Posts</button>
+                <a href="https://medium.com/@hadianasliwa" target="_blank" rel="noreferrer" className="hidden sm:block text-sm font-black uppercase tracking-widest text-indigo-600 hover:underline">View All Posts</a>
              </div>
              
              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {[
-                  { title: "Google, Advanced Data Analytics", date: "August 2023", tag: "Analytics" },
-                  { title: "IBM, Data Analyst", date: "December 2022", tag: "Statistics/Analytics" }
+                  { title: "Google, Advanced Data Analytics", date: "August 2023", tag: "Analytics/Statistics/ML", url: "https://coursera.org/share/3f2a390a0d46f98cd736b69be81f42e5" },
+                  { title: "IBM, Data Analyst", date: "December 2022", tag: "Data Science/Dashboards/AI", url: "https://coursera.org/share/0017509401e0ae306f4c0f5f7ed8e734" }
                 ].map((post, i) => (
-                  <motion.div 
+                  <motion.a 
                     key={i}
+                    href={post.url}
+                    target="_blank"
+                    rel="noreferrer"
                     whileHover={{ y: -5 }}
-                    className="p-8 bg-zinc-50 dark:bg-zinc-900/50 rounded-2xl border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between group"
+                    className="p-8 bg-zinc-50 dark:bg-zinc-900/50 rounded-2xl border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between group cursor-pointer"
                   >
                     <div>
                       <span className="text-[10px] font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-4 inline-block">{post.tag}</span>
-                      <h3 className="text-2xl font-bold text-zinc-900 dark:text-white mb-4 group-hover:text-blue-600 transition-colors">{post.title}</h3>
+                      <h3 className="text-2xl font-black text-zinc-900 dark:text-white mb-4 group-hover:text-indigo-600 transition-colors uppercase tracking-tight italic">{post.title}</h3>
                     </div>
                     <div className="flex justify-between items-center mt-8">
                        <span className="text-sm text-zinc-500">{post.date}</span>
-                       <button className="p-2 rounded-full bg-white dark:bg-zinc-800 shadow-sm"><ExternalLink size={16} /></button>
+                       <div className="p-2 rounded-full bg-white dark:bg-zinc-800 shadow-sm group-hover:bg-indigo-600 group-hover:text-white transition-all"><ExternalLink size={16} /></div>
                     </div>
-                  </motion.div>
+                  </motion.a>
                 ))}
              </div>
           </section>
 
           {/* Contact Section */}
           <section id="contact" className="py-32 px-6 sm:px-12 bg-indigo-600 text-white">
-            <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-              <div>
+            <div className="max-w-[1440px] mx-auto flex flex-col items-center text-center">
+              <div className="max-w-2xl">
                 <p className="text-[10px] font-black uppercase tracking-[0.4em] text-indigo-200 mb-6">// Global Connectivity</p>
                 <h2 className="text-6xl md:text-8xl font-black mb-10 tracking-tighter leading-none italic uppercase">Let's solve<br/>together.</h2>
-                <p className="text-indigo-100 mb-12 text-xl leading-relaxed max-w-md">
+                <p className="text-indigo-100 mb-12 text-xl leading-relaxed">
                   Whether it's a specific data challenge or a grand architectural vision, I am ready to collaborate.
                 </p>
                 
-                <div className="space-y-8">
+                <div className="flex justify-center">
                   <a href="mailto:hadiana.eng@gmail.com" className="flex items-center gap-6 group">
                     <div className="w-16 h-16 rounded-2xl border-2 border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-indigo-600 transition-all">
                       <Mail size={24} />
@@ -305,65 +305,6 @@ export default function App() {
                     <span className="text-2xl font-black uppercase tracking-tight italic">hadiana.eng@gmail.com</span>
                   </a>
                 </div>
-              </div>
-              
-              <div className="bg-white rounded-[2rem] p-10 md:p-16 text-zinc-900 shadow-2xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-50 rounded-bl-full opacity-50" />
-                {formState === 'success' ? (
-                  <motion.div 
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    className="h-full flex flex-col items-center justify-center text-center py-10"
-                  >
-                    <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
-                       <Send size={28} />
-                    </div>
-                    <h3 className="text-2xl font-bold mb-2">Message Sent!</h3>
-                    <p className="text-zinc-600">Thanks for reaching out. I'll get back to you shortly.</p>
-                  </motion.div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div>
-                      <label className="block text-xs font-bold uppercase text-zinc-400 mb-1">Name</label>
-                      <input 
-                        type="text" 
-                        required
-                        className="w-full px-4 py-3 rounded-lg bg-zinc-50 border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all"
-                        placeholder="Your Name"
-                        id="contact-name"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-bold uppercase text-zinc-400 mb-1">Email</label>
-                      <input 
-                        type="email" 
-                        required
-                        className="w-full px-4 py-3 rounded-lg bg-zinc-50 border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all"
-                        placeholder="your@email.com"
-                        id="contact-email"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-bold uppercase text-zinc-400 mb-1">Message</label>
-                      <textarea 
-                        rows={4}
-                        required
-                        className="w-full px-4 py-3 rounded-lg bg-zinc-50 border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all resize-none"
-                        placeholder="How can I help you?"
-                        id="contact-message"
-                      ></textarea>
-                    </div>
-                    <button 
-                      type="submit"
-                      disabled={formState === 'submitting'}
-                      className="w-full py-4 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700 transition-all flex items-center justify-center gap-2"
-                      id="contact-submit"
-                    >
-                      {formState === 'submitting' ? 'Sending...' : 'Send Message'}
-                      <Send size={18} />
-                    </button>
-                  </form>
-                )}
               </div>
             </div>
           </section>
